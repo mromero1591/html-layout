@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+  }
+  /* inherit border-box on all elements in the universe and before and after
+   */
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
+
+.wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 10px;
+}
+
+.shapes {
+    grid-row: 1/2;
+    display: flex;
+    flex-flow: row nowrap;
+    border: 2px solid black; 
+    align-items: flex-end;
+}
+
+.verticle {
+    background-color: purple;
+    margin-left: 20px; 
+    margin-bottom: 20px;
+    margin-right: 40px;
+    height: 70%;
+    width: 50px;
+}
+
+.rectangle {
+    background-color: green;
+    height: 90%;
+    width: 600px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.circle {
+    background-color: aqua;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.square {
+    border: 5px dotted black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-rectangle {
+    width: 80%;
+    height: 70%;
+    background-color: #fffacd;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-wrapper {
+    border: 1px solid rgba(128, 128, 128, 0.783);
+    height: 70%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 7px 9px 5px -5px rgba(163,163,163,1);
+}
+
+.message-wrapper>div>h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #121482;
+}
