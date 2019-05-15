@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+  }
+  /* inherit border-box on all elements in the universe and before and after
+   */
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: repeat(7, 14%);
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #d8d8d7;
+}
+
+.menu-icon {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: #4a90e2;
+    height: 100px;
+    width: 100px;
+}
+
+.content {
+    grid-row: 2/4;
+}
+
+.content>p {
+    padding: 40px;
+    font-size: 1.5em;
+}
+
+.blue {
+    background-color: #4990e2;
+}
+
+.greenish {
+    background-color: #51e3c2;
+}
+
+.swampish {
+    background-color: #b8e986;
+}
+
+.yellow {
+    background-color: #f8e71c;
+}
